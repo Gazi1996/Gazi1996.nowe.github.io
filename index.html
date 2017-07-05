@@ -3,37 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-      
-       <label for="name">Imię: </label>
-        <input type="text" name="imie" placeholder="Tu wpisz swoje imię" id="name">
-        
-        <label for="surname">Nazwisko: </label>
-        <input type="text" name="nazwisko" placeholder="Tu wpisz swoje nazwisko" id="surname">
-        
-        <label for="email">E-mail: </label>
-        <input type="email" name="mail" placeholder="Tu wpisz e-mail" id="email">
-        
-        <label for="contact">Telefon: </label>
-        <input type="tel" name="kontakt" placeholder="Tu wpisz swój numer telefonu" id="contact">
-        
-        <legend>Wybierz miasto</legend>
-        <select name="miasto" id="city">
-            <option value="Kraków">Kraków</option>
-            <option value="Warszawa">Warszawa</option>
-            <option value="Gdańsk">Gdańsk</option>
-        </select>
-        
-        <legend>Wybierz plec: </legend>
-        Mężczyzna<input type="radio" value="man" name="plec">
-        Kobieta<input type="radio" value="woman" name="plec">
-        
-        Zgadzam się z regulaminem strony<input type="checkbox" value="agree"  name="zgoda" >
-        
-        <label for="message"></label>
-        <textarea name="wiadomość" id="message" cols="30" rows="10"></textarea>
-    </form>
+   
+   <div id="box">
+   
+       <h1>Formularz</h1>
+
+        <form action="https://formspree.io/gazi1996@o2.pl.com" method="POST">
+
+           <label for="name">Imię: </label>
+            <input type="text" name="imie" placeholder="Tu wpisz swoje imię" id="name" class="input">
+
+            <div style="clear:both;"></div>
+
+            <label for="surname">Nazwisko: </label>
+            <input type="text" name="nazwisko" placeholder="Tu wpisz swoje nazwisko" id="surname" class="input">
+
+            <div style="clear:both;"></div>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="mail" placeholder="Tu wpisz e-mail" id="email" class="input">
+
+            <div style="clear:both;"></div>
+
+            <label for="contact">Telefon: </label>
+            <input type="tel" name="kontakt" placeholder="Tu wpisz swój numer telefonu" id="contact" class="input">
+
+            <div style="clear:both;"></div>
+
+            <legend>Wybierz miasto</legend>
+            <select name="miasto" id="city">
+                <option value="Kraków">Kraków</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Gdańsk">Gdańsk</option>
+            </select> <br/>
+
+            <div style="clear:both;"></div>
+
+            <legend>Wybierz plec: </legend>
+            
+            <span>Mezczyzna</span>
+            <input type="radio" value="man" name="plec" class="plec">
+           
+            <span>Kobieta</span>
+            <input type="radio" value="woman" name="plec" class="plec">
+
+            <div style="clear:both;"></div>
+            
+            <div id="agree">
+                <input type="checkbox" value="agree"  name="zgoda" id="agreement">
+                <span>Zgadzam się z regulaminem strony</span>
+            </div>
+            
+            <div style="clear:both;"></div>
+
+            <label for="message">Wiadomość</label>
+            <textarea name="wiadomość" id="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="wyślij" id="send">
+            
+        </form>
+    </div>
 </body>
 </html>
