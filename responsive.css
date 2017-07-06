@@ -1,0 +1,59 @@
+@media (max-width: 800px)
+{
+    #send
+    { 
+        display: none;
+    }
+    
+    #send_div
+    {
+        width: 80%;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border: 1px solid transparent;
+        margin-top: 5px;
+    }
+    
+    #send2
+    {
+        margin: 0;
+        padding: 2px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #46ff46;
+        opacity: 0.7;
+        border-radius: 5px;
+    }
+     
+    .icon
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .icon-mail
+    {
+        display: inline;
+    }
+    
+    #send_div a:hover>i
+    {
+        display: none;
+    }
+    
+    .ok
+    {
+        display:none;
+    }
+    
+    #send_div a:hover>.icon>strong>i
+    {
+        display: inline;
+    }
+
+}

@@ -4,67 +4,80 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 <body>
    
-   <div id="box">
-   
-       <h1>Formularz</h1>
-
         <form action="https://formspree.io/rafalgazda.mail@gmail.com" method="POST">
 
            <label for="name">Imię: </label>
-            <input type="text" name="imie" placeholder="Tu wpisz swoje imię" id="name" class="input">
-
-            <div style="clear:both;"></div>
+            <input type="text" name="imie" placeholder="Tu wpisz swoje imię" id="name" class="input"> <br>
 
             <label for="surname">Nazwisko: </label>
-            <input type="text" name="nazwisko" placeholder="Tu wpisz swoje nazwisko" id="surname" class="input">
-
-            <div style="clear:both;"></div>
+            <input type="text" name="nazwisko" placeholder="Tu wpisz swoje nazwisko" id="surname" class="input"> <br>
 
             <label for="email">E-mail: </label>
-            <input type="email" name="mail" placeholder="Tu wpisz e-mail" id="email" class="input">
+            <input type="email" name="mail" placeholder="Tu wpisz e-mail" id="email" class="input"> <br>
 
-            <div style="clear:both;"></div>
 
             <label for="contact">Telefon: </label>
-            <input type="tel" name="kontakt" placeholder="Tu wpisz swój numer telefonu" id="contact" class="input">
-
-            <div style="clear:both;"></div>
+            <input type="tel" name="kontakt" placeholder="Tu wpisz swój numer telefonu" id="contact" class="input"> <br>
 
             <label>Wybierz miasto</label>
             <select name="miasto" id="city">
                 <option value="Kraków">Kraków</option>
                 <option value="Warszawa">Warszawa</option>
                 <option value="Gdańsk">Gdańsk</option>
-            </select> <br/>
+            </select> <br>
 
-            <div style="clear:both;"></div>
 
-            <label>Wybierz plec:</label>
+            <label>Podaj swoją płeć:</label>
+             
+             <br>
             
-            <span>Mezczyzna</span>
-            <input type="radio" value="man" name="plec" class="plec">
-           
-            <span>Kobieta</span>
-            <input type="radio" value="woman" name="plec" class="plec">
-
-            <div style="clear:both;"></div>
+            <input type="radio" value="man" name="plec" class="plec" id="man">
+            <label for="man" class="plec_label">Mezczyzna</label>
             
-            <div id="agree">
-                <input type="checkbox" value="agree"  name="zgoda" id="agreement">
-                <span>Zgadzam się z regulaminem strony</span>
-            </div>
+            <br>
             
-            <div style="clear:both;"></div>
-
+            <input type="radio" value="woman" name="plec" class="plec" id="woman">
+            <label for="woman" class="plec_label">Kobieta</label>
+            
+            <br><br>
+            
             <label for="message">Wiadomość</label>
-            <textarea name="wiadomość" id="message" cols="30" rows="10"></textarea>
-
-            <input type="submit" value="Send" id="send">
+            <textarea name="wiadomość" id="message" cols="30" rows="10"></textarea><br>
             
+            <input type="checkbox" value="agree"  name="zgoda" id="agreement">
+            <label for="agreement" id="agreementlabel">Zgadzam się z regulaminem strony</label>
+
+            
+            <div style="clear:both;"></div>
+
+            <input type="submit" value="Wyślij" id="send">
+            
+            
+            
+                <div id="send_div">
+                   <a>
+                        <input type="submit" value="" id="send2" >
+                        
+                        <div class="icon">
+                            <strong><i class="icon-mail" class="ok"></i></strong>
+                            <i class="icon-ok ok" id="ok" ></i>
+                        </div>
+
+                    </a>
+                    
+                </div>
+            
+            
+                                            
         </form>
-    </div>
+
 </body>
 </html>

@@ -1,64 +1,107 @@
-#box
+form
 {
-    width: 400px;
-}
-
-h1
-{
-    margin-left: 20px;
+    width: 30%;
+    background-color:#213b50 ;
+    padding: 10px 0px 5px 0px;
+    box-shadow: 5px 5px 5px gray;
 }
 
 input, select, span
 {
+    width: 50%;
     display: block;
-    float: left;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
     padding: 2px;
+    background-color: #2b4a64;
+    border: 1px solid transparent;
 }
 
 label, legend
 {
-    display: block;
-    float: left;
     margin-left: 20px;
-    margin-bottom: 15px;
-    width: 120px;
+    margin-bottom: 10px;
+    width: 50%;
     padding: 2px;
-}
-
-span
-{
-    display: block;
-    float: left;
-    margin-left: 10px;
-}
-
-
-#agree
-{
-    display: block;
-    float: left;
-    margin: 30px 0px 5px 20px;
-}
-
-#agreement
-{
-    margin: 4px;
+    color: white;
 }
 
 #message
 {
     margin-left: 20px;
     display: block;
-    clear:both;
+    width: 50%;
 }
 
 #send
 {
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-    border-radius: 5px;
+    font-size: 80%;
+    font-weight: 800;
+    margin: 5% 0% 5% 20px;
+    border-radius: 4px;
+    background-color: #46ff46;
+    color: #425889;
+    text-transform: uppercase;
+    width: 20%;
+    border: 1px solid transparent;
+    display: inline;
+}
+
+#send2
+{
+    display: none;
+}
+
+#city
+{
+    border: 1px solid transparent;
+}
+
+input:focus
+{
+    background-color: #4e708c;
+    color: #ffffff;
+    outline: none;
+}
+
+input[type="radio"]
+{
+    display: inline-block;
+    margin-top: 5px;
+    width: 5%;
+}
+
+#agreement
+{
+    width:5%;
+    float: left;    
+    margin-top: 0px;
+}
+
+#agreementlabel
+{
+    width: 20%;
+    margin-left: 0px;
+}
+
+.plec_label
+{
+   margin-left: 2px; 
+}
+
+.icon-mail
+{
+    display:none;
+}
+
+.ok
+{
+    display: none;
+}
+
+#send_div a:hover>.icon>strong>i
+{
+    display: block;
 }
 
 
